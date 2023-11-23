@@ -12,6 +12,9 @@ function App() {
   // Home component for the '/' route
   const Home = () => (
     <>
+    {/* Conditionally render the Banner only on the home page */}
+    {window.location.pathname === '/' && <Banner />}
+
     <div className="our-services"> <h2>Our Services:</h2> </div>
     <div className="service-cards">
       
@@ -31,7 +34,6 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Banner />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/service-details/:title" element={<ServiceDetails />} />

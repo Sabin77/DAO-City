@@ -6,6 +6,7 @@ body {
 }
 
 nav {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -216,4 +217,53 @@ footer {
 
 .footer-middle {
   flex: 2;
+}
+
+
+
+.service-details-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.photo-section {
+  flex: 1;
+  margin-right: 20px;
+  
+}
+
+.photo-section img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.details-section {
+  flex: 2;
+}
+
+.details-section h2 {
+  font-size: 36px; /* Increase the font size for the title */
+  margin-bottom: 10px;
+}
+
+.details-section p {
+  margin-bottom: 20px;
+}
+
+.details-section button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px; /* Increase the padding for the button */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.5rem; /* Increase the font size for the button */
+  transition: background-color 0.3s ease;
+}
+
+.details-section button:hover {
+  background-color: #45a049;
 }

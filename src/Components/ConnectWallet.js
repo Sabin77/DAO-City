@@ -2,8 +2,8 @@
 import { showConnect } from '@stacks/connect';
 import { userSession } from './UserSession';
 
-const myAppName = 'My Stacks Web-App'; // shown in wallet pop-up
-const myAppIcon = window.location.origin + '/my_logo.png'; // shown in wallet pop-up
+const myAppName = 'DAO CITY'; // shown in wallet pop-up
+const myAppIcon = window.location.origin + '/dao-city-logo.png'; // shown in wallet pop-up
 
 export const connectWallet = () => {
   showConnect({
