@@ -2,13 +2,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ServiceCard = ({ title, imageUrl, body }) => {
+const ServiceCard = ({ title, imageUrl, body, level }) => {
   return (
-    <div className="card-container">
-      <div className="badge-container">
-  <span className="badge">Your Text Here</span>
-</div>
+    <div className="card-container"> 
       <div className="image-container1">
+        <div className={`badge-container service-level-badge rounded-right`} data-level={level} >
+           <span className="badge rounded-right">{level}</span>
+        </div>
         <img src={imageUrl} alt="" />
       </div>
       <div className="card-content">

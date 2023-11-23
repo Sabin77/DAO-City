@@ -1,5 +1,6 @@
 // src/components/Navbar.js
 import React from 'react';
+import { connectWallet } from './ConnectWallet';
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-right">
-        <button>Connect Wallet</button>
+        <button onClick={connectWallet}>Connect Wallet</button>
       </div>
     </nav>
   );

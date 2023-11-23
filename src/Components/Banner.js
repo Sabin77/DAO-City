@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="banner">
         <div className="banner-content">
           <div className="text-container">
-            <h1>DAO CITY</h1>
+            <h1> WELCOME TO DAO CITY</h1>
             <h2>Get access to Tokyo tower services with tokens</h2>
           </div>
           {/* <div className="image-container">
