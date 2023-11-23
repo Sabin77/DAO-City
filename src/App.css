@@ -267,3 +267,57 @@ footer {
 .details-section button:hover {
   background-color: #45a049;
 }
+
+/* Modal css */
+/* src/components/Modal.css */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  width: 40%; /* Adjusted to make the modal smaller */
+  height: 40%; /* Adjusted to make the modal smaller */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.modal-content p {
+  margin-bottom: 10px;
+  font-size: 1.5rem; /* Adjusted to make the text larger */
+  font-weight: bold; /* Adjusted to make the text bold */
+}
+
+.modal-content button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+
